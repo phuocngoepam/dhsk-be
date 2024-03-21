@@ -27,7 +27,7 @@ public class StorePermissionController {
   }
 
 
-  @GetMapping("/{role}")
+  @GetMapping("/products/{role}")
   public ResponseEntity<List<String>> getProductListByRole(@PathVariable("role") String role) {
 
     if ("admin".equals(role)) {
